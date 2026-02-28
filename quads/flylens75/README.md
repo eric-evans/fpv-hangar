@@ -41,13 +41,6 @@
 |---------|------|-------------|--------------|------------|------|-----------|
 | 0 | UAV-TECH | 1 | 1 | 1 | 70/70/70 | 100/100/70 |
 
-## Config Archive
-
-| File | Description |
-|------|-------------|
-| [dumps/20260227/diff_all.txt](dumps/20260227/diff_all.txt) | Stock diff all — Betaflight 4.5.0 |
-| [dumps/20260227/dump_all.txt](dumps/20260227/dump_all.txt) | Stock dump all — Betaflight 4.5.0 |
-
 ## References
 
 - [Flywoo FlyLens 75 HD O3 — Official Product Page](https://flywoo.net/products/flylens-75-hd-o3-2s-brushless-whoop-fpv-drone)

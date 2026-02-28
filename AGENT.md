@@ -63,3 +63,11 @@ Agent can analyze `.bbl` / `.bfl` logs and suggest Betaflight filter and PID cha
 - **Goggles**: DJI FPV Goggles V2
 - **OS**: Ubuntu (previously macOS)
 - **Reference archive**: `SKYNET/FPV` on local drive (old Mac backups)
+
+## Toolchain
+
+| Tool | Version | Notes |
+|------|---------|-------|
+| Betaflight Configurator | 10.10.0 | Installed via .deb |
+| ELRS Configurator | 1.7.11 | Installed via .deb |
+| python3-serial | system | FC serial CLI access |
