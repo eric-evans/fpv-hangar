@@ -4,16 +4,16 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 
 ## Fleet
 
-| Quad | Class | Firmware | Status |
-|------|-------|----------|--------|
-| [Flywoo Flylens 75](quads/flylens75/) | Whoop | — | Setting up |
+| Quad | Class |
+|------|-------|
+| [Flywoo Flylens 75](quads/flylens75/) | Whoop |
 
 ## Gear
 
-| Item | Directory |
-|------|-----------|
-| TBS Tango 2 | [gear/tango2/](gear/tango2/) |
-| DJI FPV Goggles V2 | [gear/dji-goggles-v2/](gear/dji-goggles-v2/) |
+| Item | Type |
+|------|------|
+| [TBS Tango 2](gear/tango2/) | Controller |
+| [DJI FPV Goggles V2](gear/dji-goggles-v2/) | Goggles |
 
 ## Stack
 
