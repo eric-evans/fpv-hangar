@@ -12,6 +12,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 | [FlyFishRC Volador VX35](quads/volador-vx35/) | 3.5" Freestyle |
 | [Ummagawd Botgrinder Demibot](quads/demibot/) | 5" Freestyle |
 | [Armattan Beaver](quads/beaver/) | 5" Freestyle |
+| [iFlight iH3](quads/ih3/) | 3.5" Cinematic |
 
 ## Gear
 
