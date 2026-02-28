@@ -13,6 +13,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 | [Ummagawd Botgrinder Demibot](quads/demibot/) | 5" Freestyle |
 | [Armattan Beaver](quads/beaver/) | 5" Freestyle |
 | [iFlight iH3](quads/ih3/) | 3.5" Cinematic |
+| [BetaFPV Pavo Pico](quads/pavo-pico/) | 80mm Whoop |
 
 ## Gear
 

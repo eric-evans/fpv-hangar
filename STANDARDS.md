@@ -2,6 +2,14 @@
 
 Preferred settings applied across the fleet.
 
+## ELRS
+
+Current fleet version: **3.3.0**
+
+Upgrade path: planned, but blocked if any quad uses SPI ELRS (SPI receivers cannot be updated independently — ELRS is baked into Betaflight). No SPI ELRS found in fleet as of 2026-02-28.
+
+To bind/update a serial ELRS receiver: power quad, wait ~60s for WiFi hotspot, connect and go to `10.0.0.1`, or use ELRS Configurator via Betaflight passthrough.
+
 ## Channel Map
 
 ```
