@@ -10,7 +10,7 @@
 | FC / ESC | [Diatone Mamba MK1 F722 AIO 35A](https://www.getfpv.com/diatone-mamba-mk1-aio-f722-fc-35a-blheli-s-2-6s-esc-external-usb.html) | STM32F7X2, BLHeli-S 35A, 2-6S, external USB-C (double-sided taped) |
 | Motors | iFlight XING2 1404 3800KV | — |
 | Props | Gemfan Hurricane 3520 Tri-blade | — |
-| RX | — | ELRS 2.4GHz |
+| RX | [Happymodel ExpressLRS Nano EP1](https://www.getfpv.com/happymodel-expresslrs-nano-2-4ghz-ep1-rx.html) | ELRS 2.4GHz |
 | Video | Caddx Vista | DJI Digital |
 | Camera | Caddx Polar | Excellent night performance |
 
