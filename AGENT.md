@@ -1,6 +1,6 @@
 # fpv-hangar — Agent Instructions
 
-This repo tracks every quad and piece of gear in the fleet. Agent helps with setup, firmware management, blackbox analysis, and tuning.
+This repo tracks every quad and piece of gear in the fleet. See README.md for the fleet inventory.
 
 ## Goals
 
@@ -9,21 +9,7 @@ This repo tracks every quad and piece of gear in the fleet. Agent helps with set
 - Archive stock configs before any changes are made
 - Work through each quad one at a time — document current state, then update
 - Use blackbox data to let Agent suggest filters and PIDs appropriate to the hardware
-- Maintain standard rates per class (freestyle / whoop / cinewhoop)
-- Maintain a standard OSD layout per class
-
-## Fleet
-
-| Name | Class | Status |
-|------|-------|--------|
-| [flylens75](quads/flylens75/) | Whoop | Setting up |
-
-## Gear
-
-| Name | Directory |
-|------|-----------|
-| TBS Tango 2 | [gear/tango2/](gear/tango2/) |
-| DJI FPV Goggles V2 | [gear/dji-goggles-v2/](gear/dji-goggles-v2/) |
+- Maintain standard rates, modes, and OSD layouts per class — see STANDARDS.md
 
 ## Workflow — Adding a New Quad
 
@@ -39,7 +25,7 @@ Agent will prompt for:
 Then Agent will:
 - Create the quad directory and README
 - Connect via USB serial and dump current firmware + config
-- Archive the dump under `dumps/YYYYMMDD/` (e.g. `dumps/20260227/`)
+- Archive the dump under `dumps/YYYYMMDD/`
 - Populate the README with all specs and firmware versions
 
 ## Workflow — Firmware Updates
@@ -57,13 +43,6 @@ Agent can analyze `.bbl` / `.bfl` logs and suggest Betaflight filter and PID cha
 - Quad class and weight
 - Observed noise signature in the log
 
-## Hardware
-
-- **Controller**: TBS Tango 2 with ELRS adapter — all quads run ELRS
-- **Goggles**: DJI FPV Goggles V2
-- **OS**: Ubuntu (previously macOS)
-- **Reference archive**: `SKYNET/FPV` on local drive (old Mac backups)
-
 ## Toolchain
 
 | Tool | Version | Notes |
@@ -71,3 +50,9 @@ Agent can analyze `.bbl` / `.bfl` logs and suggest Betaflight filter and PID cha
 | Betaflight Configurator | 10.10.0 | Installed via .deb |
 | ELRS Configurator | 1.7.11 | Installed via .deb |
 | python3-serial | system | FC serial CLI access |
+
+## Notes
+
+- All quads run ELRS 2.4GHz
+- OS: Ubuntu (previously macOS)
+- udev rule for FC serial access: `/etc/udev/rules.d/45-betaflight.rules`
