@@ -6,10 +6,10 @@
 
 | Component | Model | Notes |
 |-----------|-------|-------|
-| Frame | Flywoo Flylens 75 | 75mm ducted |
-| FC / ESC | Flywoo F405S AIO | STM32F405 |
-| Motors | — | 12-pole, DSHOT300, bidir RPM filter |
-| Props | — | — |
+| Frame | [Flywoo Flylens 75](https://flywoo.net/products/flylens-75-hd-o3-2s-brushless-whoop-fpv-drone) | 75mm ducted, ~82g without battery |
+| FC / ESC | Flywoo Goku F4 12A AIO | STM32F405, 12A integrated ESC |
+| Motors | Flywoo 1003 14800KV | 12-pole, DSHOT300, bidir RPM filter |
+| Props | Gemfan 1609 4-blade | 1.6 inch |
 | RX | — | ELRS |
 | Video | DJI O3 Air Unit | Digital |
 
@@ -48,6 +48,11 @@
 | [dumps/20260227/diff_all.txt](dumps/20260227/diff_all.txt) | Stock diff all — Betaflight 4.5.0 |
 | [dumps/20260227/dump_all.txt](dumps/20260227/dump_all.txt) | Stock dump all — Betaflight 4.5.0 |
 
+## References
+
+- [Flywoo FlyLens 75 HD O3 — Official Product Page](https://flywoo.net/products/flylens-75-hd-o3-2s-brushless-whoop-fpv-drone)
+- [Flywoo Flylens75 Review — Oscar Liang](https://oscarliang.com/flywoo-flylens75/)
+
 ## Notes
 
 - Pre-configured by Sonny (pilot name `bpzl` on FC)
@@ -55,4 +60,5 @@
 - Gyro orientation: CW180FLIP
 - OSD units: Imperial
 - Bind to Tango 2 before flying
-- Fill in motor model, props, RX firmware, and DJI O3 firmware version after inspection
+- Confirm motor model and prop size visually — sourced from Flywoo product page
+- Fill in ELRS RX firmware and DJI O3 firmware version after inspection
