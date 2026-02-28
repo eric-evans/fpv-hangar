@@ -1,6 +1,6 @@
 # DJI FPV Goggles V2
 
-Primary goggles. Used with DJI O3 Air Unit on the Flylens 75.
+Primary goggles. Supports both legacy DJI FPV system and O3 — switch modes in settings and reboot. Requires rebind after mode switch.
 
 ## Hardware
 
@@ -10,10 +10,12 @@ Primary goggles. Used with DJI O3 Air Unit on the Flylens 75.
 
 ## Firmware
 
-| Component | Version |
-|-----------|---------|
-| Goggles firmware | — |
+| Mode | Version |
+|------|---------|
+| DJI FPV System (legacy Air Unit / Vista) | 01.00.0607 |
+| O3 | 01.07.00.00 |
 
 ## Notes
 
-- Firmware version pending — check DJI app or goggles settings
+- To switch modes: Settings → select mode → reboot goggles
+- Rebind required after every mode switch
