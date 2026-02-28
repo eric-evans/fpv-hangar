@@ -1,1 +1,65 @@
-I'm getting back in to flying FPV quads. I have a good handful of quads that are working, I want to create a Git repo that maintains information about each quad (model of frame, FC, ESC, video system, RX system, motors, etc). All of these pieces I want to maintain the EXACT firmware version that they're currently configured with. I have the older DJI FPV Goggle v2. I have a TBS Tango 2 that I use an adapter for ELRS. All my stuff is ELRS. All of my various firmwares are probably about 2 years old. I would like to go quad by quad and get things up to date. I set all of these quads up with a macbook that I no longer have, but I do have a good amount of information saved (stock firmwares likey, possibly other stuff) on my harddrive at SKYNET/FPV. We can use that directory as a guide to maybe source some info (but generally I want to operate like I'm starting fresh with this stuff). I'm now on Ubuntu. I want to manage all of this information in a Git repo that we will start. This AGENT.md should be restructured to be a clean and concise document for my goals for this repo. One by one we will document each quad that I own and work through getting it updated. I REALLY want to expiriment with using Claude to analyze block box data and have him apply filters/pids that are appropriate to the black box data and information about the quadcopter (motor KV, expected lipo cell count). I envision a top level README.md that is clean, concise, simple for a human to come read. Each quad has it's own directory with a nice MD file listing all of the specs/versions/lipos it uses. Would love to come up with some standard set of rates that I like for certain classes (freestyle/whoop/cinewhoop), and maybe a nice default HUD overlay (I forget what that's called) that Claude can also apply for me (I think Claude can use the BF configurator?). Ask me any more clarifying questions needed to get started, we're brainstorming here. When adding new quads/equiptment there should be a nice mode where Claude prompts me for all of the relevant information. I think my tango 2 also gets a directory.
+# fpv-hangar — Agent Instructions
+
+This repo tracks every quad and piece of gear in the fleet. Agent helps with setup, firmware management, blackbox analysis, and tuning.
+
+## Goals
+
+- Document every quad: frame, FC, ESC, motors, RX, video system, LiPo specs
+- Track exact firmware versions for every component (Betaflight, ELRS, DJI, etc.)
+- Archive stock configs before any changes are made
+- Work through each quad one at a time — document current state, then update
+- Use blackbox data to let Agent suggest filters and PIDs appropriate to the hardware
+- Maintain standard rates per class (freestyle / whoop / cinewhoop)
+- Maintain a standard OSD layout per class
+
+## Fleet
+
+| Name | Class | Status |
+|------|-------|--------|
+| [flylens75](quads/flylens75/) | Whoop | Setting up |
+
+## Gear
+
+| Name | Directory |
+|------|-----------|
+| TBS Tango 2 | [gear/tango2/](gear/tango2/) |
+| DJI FPV Goggles V2 | [gear/dji-goggles-v2/](gear/dji-goggles-v2/) |
+
+## Workflow — Adding a New Quad
+
+Agent will prompt for:
+1. Frame name and size
+2. FC and ESC (stack or AIO)
+3. Motors (model + KV)
+4. RX (ELRS assumed)
+5. Video system
+6. LiPo cell count and capacity
+7. Prop size
+
+Then Agent will:
+- Create the quad directory and README
+- Connect via USB serial and dump current firmware + config
+- Archive the dump as `original-dump/`
+- Populate the README with all specs and firmware versions
+
+## Workflow — Firmware Updates
+
+1. Archive current config (`diff all` + `dump all`)
+2. Flash new firmware
+3. Restore config
+4. Update README with new firmware versions
+
+## Blackbox Analysis
+
+Agent can analyze `.bbl` / `.bfl` logs and suggest Betaflight filter and PID changes based on:
+- Motor KV
+- LiPo cell count
+- Quad class and weight
+- Observed noise signature in the log
+
+## Hardware
+
+- **Controller**: TBS Tango 2 with ELRS adapter — all quads run ELRS
+- **Goggles**: DJI FPV Goggles V2
+- **OS**: Ubuntu (previously macOS)
+- **Reference archive**: `SKYNET/FPV` on local drive (old Mac backups)
