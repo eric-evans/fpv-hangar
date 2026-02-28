@@ -25,7 +25,7 @@
 | Component | Version |
 |-----------|---------|
 | Betaflight | 4.5.0 (Apr 28 2024) |
-| ELRS RX | — |
+| ELRS RX | 3.3.0 (Flywoo EL24P 2400 RX) |
 | DJI O3 | — |
 
 ## PID Profiles

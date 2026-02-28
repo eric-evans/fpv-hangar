@@ -8,7 +8,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 |------|-------|
 | [Flywoo Flylens 75](quads/flylens75/) | Cinewhoop |
 | [Fractal Engineering Fractal 75](quads/fractal75/) | Whoop |
-| [Flyfish Volador II VX5](quads/volador-ii-vx5/) | 5" Freestyle |
+| [FlyFishRC Volador II VX5](quads/volador-ii-vx5/) | 5" Freestyle |
 
 ## Gear
 
