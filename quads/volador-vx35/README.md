@@ -2,6 +2,12 @@
 
 3.5" freestyle night ripper. DJI digital with Caddx Polar camera — exceptional low-light performance. High priority for firmware update and full retune.
 
+## Notes
+
+- High priority for full revamp: latest firmware + retune
+- Flies well but has room for improvement — good blackbox analysis candidate
+- Battery must be connected to access FC via USB
+
 ## Hardware
 
 | Component | Model | Notes |
@@ -28,8 +34,3 @@
 | Betaflight | 4.4.2 (Jun 1 2023) |
 | ELRS RX | — |
 | Caddx Vista | — |
-
-## Notes
-
-- High priority for full revamp: latest firmware + retune
-- Flies well but has room for improvement — good blackbox analysis candidate

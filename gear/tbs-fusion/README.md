@@ -2,6 +2,10 @@
 
 Analog VRX module for DJI FPV Goggles V2.
 
+## Notes
+
+- All analog quads run Race Band 7 (5880MHz)
+
 ## Hardware
 
 | Component | Model | Notes |
@@ -14,7 +18,3 @@ Analog VRX module for DJI FPV Goggles V2.
 | Component | Version |
 |-----------|---------|
 | TBS Fusion | — |
-
-## Notes
-
-- All analog quads run Race Band 7 (5880MHz)

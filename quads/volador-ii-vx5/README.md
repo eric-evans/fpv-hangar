@@ -2,6 +2,11 @@
 
 5" freestyle with GPS and DJI digital video.
 
+## Notes
+
+- GPS Rescue enabled — failsafe procedure set to GPS-RESCUE
+- One of few GPS-equipped quads in the fleet
+
 ## Hardware
 
 | Component | Model | Notes |
@@ -27,8 +32,3 @@
 | Betaflight | 4.4.2 (Jun 1 2023) |
 | ELRS RX | — |
 | DJI O3 | — |
-
-## Notes
-
-- GPS Rescue enabled — failsafe procedure set to GPS-RESCUE
-- One of few GPS-equipped quads in the fleet

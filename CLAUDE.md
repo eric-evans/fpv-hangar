@@ -11,6 +11,7 @@ Read these READMEs at the start of every session to understand the current state
 - [Fractal 75](quads/fractal75/README.md) — 75mm whoop, 1S, analog, built-in ELRS
 - [FlyFishRC Volador II VX5](quads/volador-ii-vx5/README.md) — 5" freestyle, 6S, DJI O3, GPS, ELRS
 - [FlyFishRC Volador VX35](quads/volador-vx35/README.md) — 3.5" freestyle, 4S, Caddx Vista, ELRS
+- [Ummagawd Botgrinder Demibot](quads/demibot/README.md) — 5" freestyle basher, 4S, Caddx Vista, ELRS, no GoPro mount, FC/ESC TBD
 
 **Gear**
 - [TBS Tango 2](gear/tango2/README.md) — primary controller, OpenTX 1.3.0, BETAFPV ELRS Nano TX module (ELRS 3.3.0, 2.4GHz)

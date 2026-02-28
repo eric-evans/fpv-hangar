@@ -4,12 +4,8 @@
 
 ## Notes
 
-- No GoPro mount — pure freestyle basher
-- Polar cam enables night flying (same setup as Volador VX35)
-- FC: Holybro Kakute F7 (confirmed from dump)
-- ESC: identify physically
-- Craft name set to "RSSI DBM" — OSD displaying RSSI dBm via craft name field
-- DSHOT600, bidirectional enabled
+- ESC not yet identified — inspect physically
+- OSD craft name field displays live RSSI dBm via `osd_craftname_msgs`
 - Motor wires obstruct USB port — cable must be fully seated for serial to connect
 
 ## Hardware
@@ -38,3 +34,7 @@
 | Betaflight | 4.4.2 (Jun 1 2023) |
 | ELRS RX | — |
 | Caddx Vista | — |
+
+## References
+
+- [Holybro Kakute F7 V1.5 — DJI Vista wiring guide](https://fpvdronepilots.com/threads/holybro-kakute-f7-v1-5-flight-controller.3259/)

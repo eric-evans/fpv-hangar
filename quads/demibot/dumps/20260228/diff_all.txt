@@ -1,0 +1,132 @@
+diff all
+
+# version
+# Betaflight / STM32F745 (S745) 4.4.2 Jun  1 2023 / 20:04:20 (23d066d08) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name KAKUTEF7
+manufacturer_id HBRO
+mcu_id 003600513038511732343539
+signature 
+
+# name: RSSI DBM
+
+# serial
+serial 2 1 115200 57600 0 115200
+serial 5 64 115200 57600 0 115200
+
+# map
+map TAER1234
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 3 900 1300 0 0
+aux 2 2 3 1300 1700 0 0
+aux 3 13 1 1700 2100 0 0
+aux 4 35 2 1700 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 600
+set dyn_notch_count = 2
+set dyn_notch_q = 400
+set dyn_notch_min_hz = 90
+set dyn_notch_max_hz = 800
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set acc_lpf_hz = 10
+set acc_calibration = -6,-44,24,1
+set baro_hardware = AUTO
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set motor_output_reordering = 3,2,1,0,4,5,6,7
+set align_board_roll = 180
+set yaw_motors_reversed = ON
+set small_angle = 180
+set simplified_gyro_filter_multiplier = 120
+set osd_warn_bitmask = 57343
+set osd_rssi_dbm_alarm = -102
+set osd_craft_name_pos = 2533
+set osd_avg_cell_voltage_pos = 2501
+set osd_disarmed_pos = 2317
+set osd_canvas_width = 30
+set osd_canvas_height = 16
+set osd_craftname_msgs = ON
+set vcd_video_system = HD
+set gyro_1_align_yaw = 2700
+set rpm_filter_q = 1000
+set rpm_filter_fade_range_hz = 100
+set craft_name = RSSI DBM
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 0
+set dterm_lpf1_dyn_expo = 0
+set dterm_lpf1_static_hz = 105
+set dterm_lpf2_static_hz = 210
+set anti_gravity_gain = 100
+set p_pitch = 67
+set i_pitch = 103
+set d_pitch = 38
+set f_pitch = 147
+set p_roll = 61
+set i_roll = 93
+set d_roll = 33
+set f_roll = 135
+set p_yaw = 61
+set i_yaw = 93
+set f_yaw = 135
+set d_min_roll = 33
+set d_min_pitch = 38
+set simplified_master_multiplier = 125
+set simplified_i_gain = 85
+set simplified_d_gain = 90
+set simplified_pi_gain = 110
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 90
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter_multiplier = 140
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 2
+set pitch_rc_rate = 2
+set yaw_rc_rate = 2
+set roll_expo = 40
+set pitch_expo = 40
+set yaw_expo = 40
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 60
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

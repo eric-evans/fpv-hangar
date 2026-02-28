@@ -2,6 +2,16 @@
 
 75mm brushless whoop with DJI digital video. The first quad reigniting the flame. (Thanks Sonny!)
 
+## Notes
+
+- Pre-configured by Sonny (pilot name `bpzl` on FC)
+- Motor output reordering set (1,0,3,2) — yaw reversed
+- Gyro orientation: CW180FLIP
+- OSD units: Imperial
+- Bind to Tango 2 before flying
+- Confirm motor model and prop size visually — sourced from Flywoo product page
+- Fill in ELRS RX firmware and DJI O3 firmware version after inspection
+
 ## Hardware
 
 | Component | Model | Notes |
@@ -52,13 +62,3 @@
 
 - [Flywoo FlyLens 75 HD O3 — Official Product Page](https://flywoo.net/products/flylens-75-hd-o3-2s-brushless-whoop-fpv-drone)
 - [Flywoo Flylens75 Review — Oscar Liang](https://oscarliang.com/flywoo-flylens75/)
-
-## Notes
-
-- Pre-configured by Sonny (pilot name `bpzl` on FC)
-- Motor output reordering set (1,0,3,2) — yaw reversed
-- Gyro orientation: CW180FLIP
-- OSD units: Imperial
-- Bind to Tango 2 before flying
-- Confirm motor model and prop size visually — sourced from Flywoo product page
-- Fill in ELRS RX firmware and DJI O3 firmware version after inspection

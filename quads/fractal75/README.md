@@ -2,6 +2,10 @@
 
 75mm whoop, sub-250g. Franken-build — Fractal 75 frame with Mobula 7 electronics.
 
+## Notes
+
+- Analog video — see standards doc for OSD layout
+
 ## Hardware
 
 | Component | Model | Notes |
@@ -25,7 +29,3 @@
 |-----------|---------|
 | Betaflight | 4.4.2 (Jun 1 2023) |
 | ELRS (built-in) | — |
-
-## Notes
-
-- Analog video — see standards doc for OSD layout

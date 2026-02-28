@@ -10,6 +10,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 | [Fractal Engineering Fractal 75](quads/fractal75/) | Whoop |
 | [FlyFishRC Volador II VX5](quads/volador-ii-vx5/) | 5" Freestyle |
 | [FlyFishRC Volador VX35](quads/volador-vx35/) | 3.5" Freestyle |
+| [Ummagawd Botgrinder Demibot](quads/demibot/) | 5" Freestyle |
 
 ## Gear
 

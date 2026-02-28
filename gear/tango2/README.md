@@ -2,6 +2,11 @@
 
 Primary controller. Running ELRS via adapter.
 
+## Notes
+
+- All quads run ELRS 2.4GHz
+- Config/model backups pending
+
 ## Hardware
 
 | Component | Model | Notes |
@@ -20,8 +25,3 @@ Primary controller. Running ELRS via adapter.
 
 - Binding phrase: set (not stored here — keep secure)
 - Channel map: TAER1234
-
-## Notes
-
-- All quads run ELRS 2.4GHz
-- Config/model backups pending

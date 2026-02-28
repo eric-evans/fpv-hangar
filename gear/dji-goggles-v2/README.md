@@ -2,6 +2,11 @@
 
 Primary goggles. Supports both legacy DJI FPV system and O3 — switch modes in settings and reboot. Requires rebind after mode switch.
 
+## Notes
+
+- To switch modes: Settings → select mode → reboot goggles
+- Rebind required after every mode switch
+
 ## Hardware
 
 | Component | Model |
@@ -14,8 +19,3 @@ Primary goggles. Supports both legacy DJI FPV system and O3 — switch modes in 
 |------|---------|
 | DJI FPV System (legacy Air Unit / Vista) | 01.00.0607 |
 | O3 | 01.07.00.00 |
-
-## Notes
-
-- To switch modes: Settings → select mode → reboot goggles
-- Rebind required after every mode switch
