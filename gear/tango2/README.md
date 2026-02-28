@@ -13,7 +13,7 @@ Primary controller. Running ELRS via adapter.
 
 | Component | Version | Target |
 |-----------|---------|--------|
-| TBS Custom OpenTX | 1.3.0 (2021-07-22) | fdtx-tango |
+| TBS Custom OpenTX | 1.3.0 (f7c45ebf, 2021-07-22) | opentx-tango |
 | ELRS TX Module | 3.3.0 | Unified_ESP32_2400_TX |
 
 ## ELRS
