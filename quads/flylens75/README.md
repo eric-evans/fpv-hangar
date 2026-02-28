@@ -41,6 +41,13 @@
 |---------|------|-------------|--------------|------------|------|-----------|
 | 0 | UAV-TECH | 1 | 1 | 1 | 70/70/70 | 100/100/70 |
 
+## Config History
+
+| Snapshot | State | Files |
+|----------|-------|-------|
+| 2026-02-27 | Pre-initial-config baseline (before your first setup pass/test flight) | [diff_all.txt](dumps/20260227/diff_all.txt), [dump_all.txt](dumps/20260227/dump_all.txt) |
+| 2026-02-28 | Capture taken right after applying channel map and mode mapping for first flight | [diff_all.txt](dumps/20260228/diff_all.txt), [dump_all.txt](dumps/20260228/dump_all.txt) |
+
 ## References
 
 - [Flywoo FlyLens 75 HD O3 — Official Product Page](https://flywoo.net/products/flylens-75-hd-o3-2s-brushless-whoop-fpv-drone)
