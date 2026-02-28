@@ -9,6 +9,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 | [Flywoo Flylens 75](quads/flylens75/) | Cinewhoop |
 | [Fractal Engineering Fractal 75](quads/fractal75/) | Whoop |
 | [FlyFishRC Volador II VX5](quads/volador-ii-vx5/) | 5" Freestyle |
+| [FlyFishRC Volador VX35](quads/volador-vx35/) | 3.5" Freestyle |
 
 ## Gear
 
@@ -16,6 +17,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 |------|------|
 | [TBS Tango 2](gear/tango2/) | Controller |
 | [DJI FPV Goggles V2](gear/dji-goggles-v2/) | Goggles |
+| [TBS Fusion](gear/tbs-fusion/) | Analog VRX |
 
 ## Stack
 
