@@ -1,0 +1,207 @@
+#
+
+# diff all
+
+# version
+# Betaflight / STM32F405 (S405) 4.5.0 Apr 28 2024 / 02:37:18 (c155f5830) MSP API: 1.46
+# config rev: 3068e6e
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name FLYWOOF405S_AIO
+manufacturer_id FLWO
+mcu_id 0025004d4e50501020383236
+signature 
+
+# name: Flylens 75
+
+# resources
+resource PINIO 1 D06
+
+# feature
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 5 131073 115200 57600 0 115200
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST_LANDING
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -BAT_CRIT_LOW
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# beacon
+beacon RX_SET
+
+# led
+led 0 7,6::A:11
+led 1 8,6::A:11
+
+# mode_color
+mode_color 6 0 12
+mode_color 6 1 7
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 2 2 1300 1700 0 0
+aux 3 13 2 1700 2100 0 0
+aux 4 35 3 1700 2100 0 0
+
+# master
+set dyn_notch_min_hz = 60
+set dyn_notch_max_hz = 300
+set acc_calibration = 10,20,175,1
+set dshot_idle_value = 800
+set dshot_burst = ON
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set motor_output_reordering = 1,0,3,2,4,5,6,7
+set yaw_motors_reversed = ON
+set small_angle = 180
+set pid_process_denom = 4
+set osd_units = IMPERIAL
+set osd_warn_bitmask = 629
+set osd_vbat_pos = 2528
+set osd_rssi_pos = 2400
+set osd_link_quality_pos = 2432
+set osd_rssi_dbm_pos = 2464
+set osd_tim_1_pos = 375
+set osd_tim_2_pos = 2552
+set osd_flymode_pos = 248
+set osd_throttle_pos = 279
+set osd_current_pos = 257
+set osd_mah_drawn_pos = 289
+set osd_altitude_pos = 2060
+set osd_warnings_pos = 14729
+set osd_avg_cell_voltage_pos = 2496
+set osd_disarmed_pos = 2282
+set osd_core_temp_pos = 215
+set osd_pid_profile_name_pos = 66
+set osd_canvas_width = 30
+set osd_canvas_height = 16
+set system_hse_mhz = 8
+set vcd_video_system = PAL
+set pinio_box = 40,41,255,255
+set gyro_1_sensor_align = CW180FLIP
+set gyro_1_align_pitch = 1800
+set craft_name = Flylens 75
+set pilot_name = bpzl
+
+profile 0
+
+# profile 0
+set profile_name = 2S-55/75
+set dterm_lpf1_static_hz = 0
+set iterm_relax_cutoff = 25
+set p_pitch = 63
+set i_pitch = 124
+set d_pitch = 73
+set f_pitch = 149
+set p_roll = 60
+set i_roll = 118
+set d_roll = 62
+set f_roll = 143
+set p_yaw = 60
+set i_yaw = 118
+set f_yaw = 143
+set d_min_roll = 60
+set d_min_pitch = 71
+set thrust_linear = 20
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 10
+set simplified_i_gain = 110
+set simplified_d_gain = 200
+set simplified_pi_gain = 135
+set simplified_dmax_gain = 10
+set simplified_feedforward_gain = 120
+set simplified_pitch_d_gain = 105
+
+profile 1
+
+# profile 1
+set profile_name = 2S-1000
+set dterm_lpf1_static_hz = 0
+set iterm_relax_cutoff = 25
+set p_pitch = 69
+set i_pitch = 137
+set d_pitch = 81
+set f_pitch = 164
+set p_roll = 66
+set i_roll = 130
+set d_roll = 68
+set f_roll = 158
+set p_yaw = 66
+set i_yaw = 130
+set f_yaw = 158
+set d_min_roll = 66
+set d_min_pitch = 78
+set thrust_linear = 20
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 10
+set simplified_master_multiplier = 110
+set simplified_i_gain = 110
+set simplified_d_gain = 200
+set simplified_pi_gain = 135
+set simplified_dmax_gain = 10
+set simplified_feedforward_gain = 120
+set simplified_pitch_d_gain = 105
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = UAV-TECH
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 1
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 70
+set roll_srate = 100
+set pitch_srate = 100
+set yaw_srate = 70
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

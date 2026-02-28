@@ -39,12 +39,12 @@ Agent will prompt for:
 Then Agent will:
 - Create the quad directory and README
 - Connect via USB serial and dump current firmware + config
-- Archive the dump as `original-dump/`
+- Archive the dump under `dumps/YYYYMMDD/` (e.g. `dumps/20260227/`)
 - Populate the README with all specs and firmware versions
 
 ## Workflow — Firmware Updates
 
-1. Archive current config (`diff all` + `dump all`)
+1. Archive current config (`diff all` + `dump all`) under `dumps/YYYYMMDD/`
 2. Flash new firmware
 3. Restore config
 4. Update README with new firmware versions
