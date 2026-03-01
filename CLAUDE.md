@@ -15,6 +15,7 @@ Read these READMEs at the start of every session to understand the current state
 - [Armattan Beaver](quads/beaver/README.md) — 5" freestyle, 4S, Caddx Vista + OG DJI cam, GoPro Hero 7, ELRS, Hobbywing XRotor F7 CON
 - [iFlight iH3](quads/ih3/README.md) — 3.5" cinematic, 4S, DJI O3, GPS, ELRS, full BNF
 - [BetaFPV Pavo Pico](quads/pavo-pico/README.md) — 80mm whoop, 2S, DJI O3, serial ELRS, PAL→HD OSD fix still needed
+- [GepRC Phantom](quads/phantom/README.md) — 2.5" freestyle toothpick, 3S, analog, TBS Crossfire (not ELRS), stock tune, biblades
 
 **Gear**
 - [TBS Tango 2](gear/tango2/README.md) — primary controller, OpenTX 1.3.0, BETAFPV ELRS Nano TX module (ELRS 3.3.0, 2.4GHz)

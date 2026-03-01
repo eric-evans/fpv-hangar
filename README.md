@@ -14,6 +14,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 | [Armattan Beaver](quads/beaver/) | 5" Freestyle |
 | [iFlight iH3](quads/ih3/) | 3.5" Cinematic |
 | [BetaFPV Pavo Pico](quads/pavo-pico/) | 80mm Whoop |
+| [GepRC Phantom](quads/phantom/) | 2.5" Freestyle Toothpick |
 
 ## Gear
 
@@ -25,6 +26,6 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 
 ## Stack
 
-- **RX**: ELRS on all quads
+- **RX**: ELRS on most quads; GepRC Phantom runs TBS Crossfire
 - **Controller**: TBS Tango 2 w/ ELRS adapter
 - **Goggles**: DJI FPV Goggles V2
