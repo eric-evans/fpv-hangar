@@ -42,3 +42,7 @@
 | Snapshot | State | Files |
 |----------|-------|-------|
 | 2026-02-28 | Baseline — stock GepRC config, untouched | [diff_all.txt](dumps/20260228/diff_all.txt), [dump_all.txt](dumps/20260228/dump_all.txt) |
+
+## References
+
+- [GEPRC Phantom Toothpick Review — Oscar Liang](https://oscarliang.com/geprc-phantom-toothpick/)
