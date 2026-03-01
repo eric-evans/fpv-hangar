@@ -15,6 +15,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 | [iFlight iH3](quads/ih3/) | 3.5" Cinematic |
 | [BetaFPV Pavo Pico](quads/pavo-pico/) | 80mm Whoop |
 | [GepRC Phantom](quads/phantom/) | 2.5" Freestyle Toothpick |
+| [Armattan Tadpole 2.5"](quads/tadpole/) | 2.5" Freestyle Toothpick |
 
 ## Gear
 
