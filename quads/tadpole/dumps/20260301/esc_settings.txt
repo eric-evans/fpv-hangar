@@ -1,0 +1,36 @@
+# Tadpole ESC Settings — 2026-03-01
+# Post Bluejay v0.21.0 flash, default settings applied + temperature protection restored
+
+## Hardware
+All 4 ESCs: G-H-30, Bluejay v0.21.0, 48kHz
+
+## Motor Direction
+ESC 1: Normal
+ESC 2: Normal
+ESC 3: Normal
+ESC 4: Normal
+# Note: was Reversed on all 4 in previous config — verify correct direction via BF motor test
+
+## Common Parameters
+Minimum Startup Power (Boost):       1025
+Maximum Startup Power (Protection):  1020
+Motor Timing:                        22.5° (MediumHigh)
+Demag Compensation:                  Low
+RPM Power Protection (Rampup):       9x
+
+## Beacon Settings
+Beep Strength:                       40
+Beacon Strength:                     80
+Beacon Delay:                        10 minutes
+
+## Safety Settings
+ESC Power Rating:                    2S+
+Temperature Protection:              140°C (re-enabled after default reset it to Disabled)
+Force EDT arm:                       Off
+
+## Brake Settings
+Brake on Stop:                       Off
+Maximum Braking Strength:            255
+
+## Startup Melodies
+# Reset to Bluejay defaults — Mario 1-up melodies from 20260228/esc_settings.txt to be restored later

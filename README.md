@@ -30,3 +30,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 - **RX**: ELRS on most quads; GepRC Phantom runs TBS Crossfire
 - **Controller**: TBS Tango 2 w/ ELRS adapter
 - **Goggles**: DJI FPV Goggles V2
+
+## Notes
+
+- `dump all` produces no output in BF 2025.12.2 — use `diff all` only; sufficient for restoration when combined with known firmware defaults
