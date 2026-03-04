@@ -14,7 +14,7 @@
 | Component | Model | Notes |
 |-----------|-------|-------|
 | Frame | BetaFPV Pavo Pico | 80mm, PA12 |
-| FC / ESC | BetaFPV F4 2-3S 20A AIO V1 | STM32F4, 20A cont / 25A peak, integrated |
+| FC / ESC | BetaFPV F405 2-3S 20A AIO V1 | STM32F405, 20A cont / 25A peak, integrated |
 | Motors | BetaFPV 1102 14000KV | 2-3S |
 | Props | Gemfan 45mm 3-blade | — |
 | RX | Serial ELRS | ELRS 2.4GHz |

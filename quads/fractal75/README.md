@@ -11,7 +11,8 @@
 | Component | Model | Notes |
 |-----------|-------|-------|
 | Frame | Fractal Engineering Fractal 75 | 75mm ducted |
-| FC / ESC | Happymodel CrazyBee F4 SX1280 | STM32F411, built-in ELRS 2.4GHz, 1S |
+| FC | Happymodel CrazyBee F4 SX1280 | STM32F411, built-in ELRS 2.4GHz, 1S |
+| ESC | Z-H-30 4-in-1 | Bluejay 0.16, 24kHz |
 | Motors | Flywoo ROBO 1002 23500KV | 12-pole, DSHOT300, bidir RPM filter |
 | Props | Gemfan 40mm Tri-blade | Sub-250 |
 | RX | Built-in SX1280 | ELRS 2.4GHz, on-FC |
