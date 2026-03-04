@@ -13,7 +13,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 | [iFlight iH3](quads/ih3/) | 3.5" Cinematic |
 | [GepRC Phantom](quads/phantom/) | 2.5" Freestyle Toothpick |
 | [Armattan Tadpole 2.5"](quads/tadpole/) | 2.5" Freestyle Toothpick |
-| [BetaFPV Pavo Pico](quads/pavo-pico/) | 80mm Whoop |
+| [BetaFPV Pavo Pico](quads/pavo-pico/) | 80mm Cinewhoop |
 | [Flywoo Flylens 75](quads/flylens75/) | 75mm Cinewhoop |
 | [Mobula 7 HD](quads/mobula7-hd/) | 75mm Whoop |
 | [Fractal Engineering Fractal 75](quads/fractal75/) | 75mm Whoop |

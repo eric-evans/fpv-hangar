@@ -1,6 +1,6 @@
 # BetaFPV Pavo Pico
 
-80mm brushless whoop with DJI O3. 2S.
+80mm brushless cinewhoop with DJI O3. 2S.
 
 ## Notes
 
