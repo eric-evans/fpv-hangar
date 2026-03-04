@@ -6,17 +6,17 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 
 | Quad | Class |
 |------|-------|
-| [Flywoo Flylens 75](quads/flylens75/) | Cinewhoop |
-| [Fractal Engineering Fractal 75](quads/fractal75/) | Whoop |
 | [FlyFishRC Volador II VX5](quads/volador-ii-vx5/) | 5" Freestyle |
-| [FlyFishRC Volador VX35](quads/volador-vx35/) | 3.5" Freestyle |
 | [Ummagawd Botgrinder Demibot](quads/demibot/) | 5" Freestyle |
 | [Armattan Beaver](quads/beaver/) | 5" Freestyle |
+| [FlyFishRC Volador VX35](quads/volador-vx35/) | 3.5" Freestyle |
 | [iFlight iH3](quads/ih3/) | 3.5" Cinematic |
-| [BetaFPV Pavo Pico](quads/pavo-pico/) | 80mm Whoop |
-| [Mobula 7 HD](quads/mobula7-hd/) | 75mm Whoop |
 | [GepRC Phantom](quads/phantom/) | 2.5" Freestyle Toothpick |
 | [Armattan Tadpole 2.5"](quads/tadpole/) | 2.5" Freestyle Toothpick |
+| [BetaFPV Pavo Pico](quads/pavo-pico/) | 80mm Whoop |
+| [Flywoo Flylens 75](quads/flylens75/) | 75mm Cinewhoop |
+| [Mobula 7 HD](quads/mobula7-hd/) | 75mm Whoop |
+| [Fractal Engineering Fractal 75](quads/fractal75/) | 75mm Whoop |
 
 ## Gear
 
