@@ -14,6 +14,7 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 | [Armattan Beaver](quads/beaver/) | 5" Freestyle |
 | [iFlight iH3](quads/ih3/) | 3.5" Cinematic |
 | [BetaFPV Pavo Pico](quads/pavo-pico/) | 80mm Whoop |
+| [Mobula 7 HD](quads/mobula7-hd/) | 75mm Whoop |
 | [GepRC Phantom](quads/phantom/) | 2.5" Freestyle Toothpick |
 | [Armattan Tadpole 2.5"](quads/tadpole/) | 2.5" Freestyle Toothpick |
 
@@ -22,12 +23,14 @@ Personal FPV fleet management. Tracks hardware specs, firmware versions, configs
 | Item | Type |
 |------|------|
 | [TBS Tango 2](gear/tango2/) | Controller |
+| [BETAFPV ELRS Nano TX](gear/elrs-tx-module/) | TX Module |
+| [FrSky TX Module](gear/frsky-tx-module/) | TX Module |
 | [DJI FPV Goggles V2](gear/dji-goggles-v2/) | Goggles |
 | [TBS Fusion](gear/tbs-fusion/) | Analog VRX |
 
 ## Stack
 
-- **RX**: ELRS on most quads; GepRC Phantom runs TBS Crossfire
+- **RX**: ELRS on most quads; GepRC Phantom runs TBS Crossfire; Mobula 7 HD runs FrSky SPI
 - **Controller**: TBS Tango 2 w/ ELRS adapter
 - **Goggles**: DJI FPV Goggles V2
 

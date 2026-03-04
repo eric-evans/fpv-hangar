@@ -1,0 +1,225 @@
+# EmuFlight / CRAZYBEEF4FR (C4FR) 0.3.3 Jan 10 2021 / 19:03:33 (467b20241) MSP API: 1.50
+
+board_name
+manufacturer_id
+mcu_id 0030005c3430510e33333939
+signature
+
+# reset configuration to default settings
+defaults nosave
+
+# name
+name |MOCKULA 6|
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -TELEMETRY
+feature -AIRMODE
+
+# beeper
+
+# beacon
+beacon RX_SET
+
+# map
+map TAER1234
+
+# serial
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 3 900 1300 0 0
+aux 2 2 3 1300 1700 0 0
+aux 3 47 3 1300 2100 0 0
+aux 4 13 1 1550 2100 0 0
+aux 5 28 3 1300 2100 0 0
+aux 6 35 2 1700 2100 0 0
+
+# adjrange
+adjrange 0 0 3 900 1200 12 3 0 0
+adjrange 1 0 3 1400 1600 12 3 0 0
+adjrange 2 0 3 1875 2100 12 3 0 0
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set gyro_sync_denom = 2
+set gyro_lowpass_hz_roll = 150
+set gyro_lowpass_hz_pitch = 150
+set gyro_lowpass_hz_yaw = 150
+set imuf_roll_q = 8000
+set imuf_pitch_q = 8000
+set imuf_yaw_q = 8000
+set imuf_w = 6
+set imuf_sharpness = 7000
+set dynamic_gyro_notch_q = 350
+set dynamic_gyro_notch_min_hz = 90
+set acc_calibration = 35,-99,-6
+set max_check = 2000
+set fpv_mix_degrees = 20
+set airmode_start_throttle_percent = 40
+set rx_spi_protocol = FRSKY_D
+set min_throttle = 1035
+set dshot_idle_value = 1000
+set motor_pwm_protocol = DSHOT300
+set bat_capacity = 300
+set vbat_max_cell_voltage = 45
+set vbat_min_cell_voltage = 30
+set vbat_warning_cell_voltage = 31
+set ibat_lpf_period = 40
+set ibata_scale = 16000
+set yaw_motors_reversed = ON
+set crashflip_power_percent = 100
+set runaway_takeoff_prevention = OFF
+set osd_warn_arming_disable = ON
+set osd_warn_batt_not_full = ON
+set osd_warn_batt_warning = ON
+set osd_warn_batt_critical = ON
+set osd_warn_visual_beeper = ON
+set osd_warn_crash_flip = ON
+set osd_warn_esc_fail = ON
+set osd_warn_core_temp = OFF
+set osd_warn_rc_smoothing = ON
+set osd_warn_dji = OFF
+set osd_rssi_pos = 2401
+set osd_tim_1_pos = 54
+set osd_tim_2_pos = 2455
+set osd_flymode_pos = 2425
+set osd_throttle_pos = 2392
+set osd_craft_name_pos = 393
+set osd_warnings_pos = 2409
+set osd_avg_cell_voltage_pos = 2433
+set vcd_video_system = NTSC
+set frsky_spi_tx_id = 99,21
+set frsky_spi_offset = -26
+set frsky_spi_bind_hop_data = 0,30,60,91,120,150,180,210,5,35,65,95,125,155,185,215,10,40,70,100,130,160,190,221,15,45,75,105,135,165,195,225,20,50,80,110,140,170,200,230,25,55,85,115,145,175,205,0,0,0
+
+# profile
+profile 0
+
+set dterm_lowpass_hz_roll = 200
+set dterm_lowpass_hz_pitch = 200
+set dterm_lowpass_hz_yaw = 100
+set dterm_lowpass2_hz_roll = 400
+set dterm_lowpass2_hz_pitch = 400
+set dterm_lowpass2_hz_yaw = 150
+set witchcraft_roll = 0
+set witchcraft_pitch = 0
+set spa_roll_i = 75
+set spa_pitch_i = 75
+set spa_yaw_i = 45
+set crash_recovery = ON
+set iterm_rotation = OFF
+set throttle_boost = 0
+set feathered_pids = 0
+set i_decay = 7
+set emu_boost = 400
+set emu_boost_yaw = 0
+set emu_boost_limit = 40
+set emu_boost_limit_yaw = 0
+set p_pitch = 90
+set i_pitch = 75
+set d_pitch = 80
+set p_roll = 90
+set i_roll = 75
+set d_roll = 80
+set p_yaw = 120
+set i_yaw = 75
+set d_yaw = 0
+set level_limit = 85
+
+# profile
+profile 1
+
+
+# profile
+profile 2
+
+
+# restore original profile selection
+profile 0
+
+# rateprofile
+rateprofile 0
+
+set roll_rc_rate = 200
+set pitch_rc_rate = 200
+set yaw_rc_rate = 205
+set roll_expo = 24
+set pitch_expo = 24
+set yaw_expo = 20
+set roll_srate = 60
+set pitch_srate = 60
+set yaw_srate = 22
+set rate_center_sensitivity = 55
+set rate_end_sensitivity = 125
+set rate_center_correction = 25
+set rate_end_correction = 75
+set rate_center_weight = 50
+set rate_end_weight = 40
+
+# rateprofile
+rateprofile 1
+
+set roll_rc_rate = 200
+set pitch_rc_rate = 200
+set yaw_rc_rate = 210
+set roll_expo = 24
+set pitch_expo = 24
+set roll_srate = 60
+set pitch_srate = 60
+set yaw_srate = 0
+set rate_end_sensitivity = 125
+set rate_end_correction = 75
+set rate_end_weight = 40
+
+# rateprofile
+rateprofile 2
+
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 210
+set roll_srate = 0
+set pitch_srate = 0
+set yaw_srate = 0
+set das_yaw_with_roll_input = 30
+set das_roll_with_yaw_input = 20
+set rate_end_sensitivity = 125
+set rate_end_correction = 75
+set rate_end_weight = 40
+
+# rateprofile
+rateprofile 3
+
+
+# rateprofile
+rateprofile 4
+
+
+# rateprofile
+rateprofile 5
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save

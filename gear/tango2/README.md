@@ -12,16 +12,11 @@ Primary controller. Running ELRS via adapter.
 | Component | Model | Notes |
 |-----------|-------|-------|
 | Controller | TBS Tango 2 | — |
-| ELRS TX Module | BETAFPV ELRS Nano TX | 2.4GHz |
+| ELRS TX Module | BETAFPV ELRS Nano TX | 2.4GHz — used for all ELRS quads |
+| FrSky TX Module | TBD — identify physically | External bay — used for Mobula 7 HD only |
 
 ## Firmware
 
 | Component | Version | Target |
 |-----------|---------|--------|
 | TBS Custom OpenTX | 1.3.0 (f7c45ebf, 2021-07-22) | opentx-tango |
-| ELRS TX Module | 3.3.0 | Unified_ESP32_2400_TX |
-
-## ELRS
-
-- Binding phrase: set (not stored here — keep secure)
-- Channel map: TAER1234

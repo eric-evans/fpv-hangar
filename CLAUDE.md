@@ -15,13 +15,16 @@ Read these READMEs at the start of every session to understand the current state
 - [Armattan Beaver](quads/beaver/README.md) — 5" freestyle, 4S, Caddx Vista + OG DJI cam, GoPro Hero 7, ELRS, Hobbywing XRotor F7 CON
 - [iFlight iH3](quads/ih3/README.md) — 3.5" cinematic, 4S, DJI O3, GPS, ELRS, full BNF
 - [BetaFPV Pavo Pico](quads/pavo-pico/README.md) — 80mm whoop, 2S, DJI O3, serial ELRS, PAL→HD OSD fix still needed
+- [Mobula 7 HD](quads/mobula7-hd/README.md) — 75mm whoop, 1S, analog+SD card, FrSky D8 SPI (not ELRS), EmuFlight 0.3.3 (not Betaflight); requires FrSky TX module in Tango 2 bay
 - [GepRC Phantom](quads/phantom/README.md) — 2.5" freestyle toothpick, 3S, analog, TBS Crossfire (not ELRS), stock tune, biblades
 - [Armattan Tadpole 2.5"](quads/tadpole/README.md) — 2.5" toothpick, analog, ELRS EP2, iFlight F411 Pro, flies badly, high priority overhaul
 
 **Gear**
-- [TBS Tango 2](gear/tango2/README.md) — primary controller, OpenTX 1.3.0, BETAFPV ELRS Nano TX module (ELRS 3.3.0, 2.4GHz)
+- [TBS Tango 2](gear/tango2/README.md) — primary controller, OpenTX 1.3.0
+- [BETAFPV ELRS Nano TX](gear/elrs-tx-module/README.md) — 2.4GHz ELRS TX module for Tango 2 external bay, ELRS 3.3.0, used for all ELRS quads
 - [DJI FPV Goggles V2](gear/dji-goggles-v2/README.md) — primary goggles, supports legacy DJI FPV and O3 modes
 - [TBS Fusion](gear/tbs-fusion/README.md) — analog VRX module for the goggles
+- [FrSky TX Module](gear/frsky-tx-module/README.md) — external bay module for Tango 2, used exclusively with Mobula 7 HD
 
 **Top-level**
 - [README.md](README.md) — fleet inventory overview
