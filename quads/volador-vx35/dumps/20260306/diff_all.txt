@@ -1,0 +1,78 @@
+diff all
+
+# version
+# Betaflight / STM32F7X2 (F722) 2025.12.2 Feb  8 2026 / 13:06:53 (79065c96b) MSP API: 1.47
+# config rev: e378347
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name MAMBAF722_I2C
+manufacturer_id DIAT
+mcu_id 003c00193456500f2030324b
+signature 
+
+# name: BATT < FULL
+
+# feature
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# serial
+serial UART4 64 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 2 900 1300 0 0
+aux 2 2 2 1300 1700 0 0
+aux 3 13 1 1700 2100 0 0
+aux 4 35 3 1700 2100 0 0
+
+# master
+set acc_calibration = 36,-5,3,1
+set blackbox_sample_rate = 1/2
+set dshot_bidir = ON
+set motor_poles = 12
+set motor_output_reordering = 2,0,3,1,4,5,6,7
+set align_board_yaw = 225
+set small_angle = 180
+set osd_warn_bitmask = 50175
+set osd_rssi_dbm_alarm = -102
+set osd_vbat_pos = 2436
+set osd_current_pos = 2500
+set osd_craft_name_pos = 2532
+set osd_warnings_pos = 14604
+set osd_avg_cell_voltage_pos = 2468
+set osd_disarmed_pos = 2285
+set osd_stat_bitmask = 8519844
+set osd_craftname_msgs = ON
+set craft_name = BATT < FULL
+
+profile 0
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save

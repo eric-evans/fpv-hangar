@@ -2,10 +2,16 @@
 
 3.5" freestyle night ripper. DJI digital with Caddx Polar camera — exceptional low-light performance. High priority for firmware update and full retune.
 
+## Weight
+
+| Configuration | Weight |
+|---------------|--------|
+| No battery | 187g |
+
 ## Notes
 
-- High priority for full revamp: latest firmware + retune
-- Flies well but has room for improvement — good blackbox analysis candidate
+- Revamp complete 2026-03-06: BF 2025.12.2, Bluejay 0.21.0, bidir DSHOT, RPM filtering
+- **Blackbox not working** — SPI flash not detected after BF upgrade (JEDEC ID 0x00). Target changed from S7X2 to F722, likely broke flash pin mapping. Needs investigation.
 - Battery must be connected to access FC via USB
 
 ## Hardware
@@ -31,6 +37,7 @@
 
 | Component | Version |
 |-----------|---------|
-| Betaflight | 4.4.2 (Jun 1 2023) |
-| ELRS RX | — |
+| Betaflight | 2025.12.2 |
+| ELRS RX | 3.3.0 |
+| Bluejay (ESC firmware) | 0.21.0 @ 48kHz |
 | Caddx Vista | — |
