@@ -11,6 +11,7 @@
 ## Notes
 
 - Revamp complete 2026-03-06: BF 2025.12.2, Bluejay 0.21.0, bidir DSHOT, RPM filtering
+- HD OSD working via WTFOS (goggles) + fpv.os (Vista)
 - **Blackbox not working** — SPI flash not detected after BF upgrade (JEDEC ID 0x00). Target changed from S7X2 to F722, likely broke flash pin mapping. Needs investigation.
 - Battery must be connected to access FC via USB
 

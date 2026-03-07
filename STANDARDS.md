@@ -45,10 +45,40 @@ aux 5 46 4 1300 1700 0 0
 
 > TBD
 
-### DJI (Standard / O3)
+### DJI Vista + Polar Camera (widescreen)
 
-> TBD
+Quads: Volador VX35
+
+Requires WTFOS on goggles and fpv.os on Vista. BF setup:
+
+```
+# Ports tab: set UART connected to Vista as MSP + DisplayPort (131073)
+serial UART2 131073 115200 57600 0 115200
+set osd_displayport_device = MSP
+# vcd_video_system locks to HD automatically when Vista is detected
+```
+
+Canvas: **53x20** (HD widescreen). OSD elements and positions (from VX35 as reference):
+
+```
+set osd_vbat_pos = 2595
+set osd_current_pos = 2626
+set osd_craft_name_pos = 2659
+set osd_warnings_pos = 14744
+set osd_avg_cell_voltage_pos = 2563
+set osd_disarmed_pos = 2426
+set osd_warn_bitmask = 50175
+set osd_rssi_dbm_alarm = -102
+set osd_stat_bitmask = 8519844
+set osd_craftname_msgs = ON
+```
+
+### DJI Vista + OG DJI Camera (4:3)
+
+Quads: Beaver, Demibot
+
+Same BF/UART setup as above. Canvas is **4:3** — OSD element positions will differ from the Polar cam layout. Layout TBD when those quads are overhauled.
 
 ### DJI O3
 
-> TBD
+O3 supports native BF HD OSD — no WTFOS required. Layout TBD.

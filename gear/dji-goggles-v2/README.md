@@ -6,6 +6,8 @@ Primary goggles. Supports both legacy DJI FPV system and O3 — switch modes in 
 
 - To switch modes: Settings → select mode → reboot goggles
 - Rebind required after every mode switch
+- **WTFOS installed** — enables Betaflight HD MSP DisplayPort OSD on Vista quads
+- See [ROOT.md](ROOT.md) for install process
 
 ## Hardware
 
@@ -17,5 +19,5 @@ Primary goggles. Supports both legacy DJI FPV system and O3 — switch modes in 
 
 | Mode | Version |
 |------|---------|
-| DJI FPV System (legacy Air Unit / Vista) | 01.00.0607 |
+| DJI FPV System (legacy Air Unit / Vista) | 01.07.0000 |
 | O3 | 01.07.00.00 |
