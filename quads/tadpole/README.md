@@ -8,7 +8,7 @@
 - Boot button does not work for DFU mode — use `bl` command in BF Configurator CLI instead
 - Front left motor (M4) struggles to start — compressed air didn't help; may need Bluejay startup power increase or motor swap
 - All motors slightly sluggish at startup — consider bumping Bluejay Boost from 1025 to 1050–1075
-- Throttle unresponsive during first hover attempt — possible dshot_idle_value or throttle range issue; runaway spool-up behavior observed on ground (PIDs or idle too high)
+- Throttle unresponsive during first hover attempt — possible dshot_idle_value or throttle range issue; runaway spool-up behavior observed on ground (PIDs or idle too high). Same behavior reproduced on VX35 — likely a BF 2025.12.2 default issue, not quad-specific.
 - 1105 5000KV motors are a mismatch for 2.5" on 3S — low KV, too heavy; swap recommended (see Hardware)
 
 ## Next Steps
