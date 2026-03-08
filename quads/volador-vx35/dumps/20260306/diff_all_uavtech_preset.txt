@@ -1,0 +1,113 @@
+# UAV Tech preset applied — see notes in README
+# Addons selected: RPM filtering, 48kHz ESC (thrust_linear = 20), Dynamic Idle
+
+# diff all
+
+# version
+# Betaflight / STM32F7X2 (F722) 2025.12.2 Feb  8 2026 / 13:06:53 (79065c96b) MSP API: 1.47
+# config rev: e378347
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name MAMBAF722_I2C
+manufacturer_id DIAT
+mcu_id 003c00193456500f2030324b
+signature
+
+# name: LQ  5:100 -37
+
+# feature
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# serial
+serial UART2 131073 115200 57600 0 115200
+serial UART4 64 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 2 900 1300 0 0
+aux 2 2 2 1300 1700 0 0
+aux 3 13 1 1700 2100 0 0
+aux 4 35 3 1700 2100 0 0
+
+# master
+set dyn_notch_count = 2
+set dyn_notch_min_hz = 125
+set dyn_notch_max_hz = 850
+set acc_calibration = 36,-5,3,1
+set blackbox_sample_rate = 1/2
+set dshot_bidir = ON
+set motor_poles = 12
+set motor_output_reordering = 2,0,3,1,4,5,6,7
+set align_board_yaw = 225
+set small_angle = 180
+set osd_warn_bitmask = 50175
+set osd_rssi_dbm_alarm = -102
+set osd_vbat_pos = 2595
+set osd_current_pos = 2626
+set osd_craft_name_pos = 2659
+set osd_warnings_pos = 14744
+set osd_avg_cell_voltage_pos = 2563
+set osd_disarmed_pos = 2426
+set osd_stat_bitmask = 8519844
+set osd_craftname_msgs = ON
+set rpm_filter_harmonics = 2
+set craft_name = LQ  5:100 -37
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 90
+set dterm_lpf1_dyn_max_hz = 180
+set dterm_lpf1_static_hz = 90
+set dterm_lpf2_static_hz = 180
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set yaw_lowpass_hz = 0
+set p_pitch = 70
+set i_pitch = 126
+set d_pitch = 45
+set f_pitch = 187
+set p_roll = 67
+set i_roll = 120
+set d_roll = 40
+set f_roll = 180
+set p_yaw = 67
+set i_yaw = 120
+set f_yaw = 180
+set d_max_pitch = 45
+set thrust_linear = 20
+set dyn_idle_min_rpm = 35
+set simplified_master_multiplier = 150
+set simplified_d_gain = 90
+set simplified_d_max_gain = 0
+set simplified_dterm_filter_multiplier = 120
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save

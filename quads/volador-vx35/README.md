@@ -10,10 +10,12 @@
 
 ## Notes
 
-- Revamp complete 2026-03-06: BF 2025.12.2, Bluejay 0.21.0, bidir DSHOT, RPM filtering
+- Revamp complete 2026-03-07: BF 4.5.3, Bluejay 0.21.0, bidir DSHOT, RPM filtering, HD OSD
 - HD OSD working via WTFOS (goggles) + fpv.os (Vista)
-- **Hover test failed** — same symptom as Tadpole: armed fine, throttle unresponsive, motors slowly spun up over several seconds toward runaway. Likely a BF 2025.12.2 default issue (dshot_idle_value, throttle scaling, or similar). Investigate alongside Tadpole.
-- **Blackbox not working** — SPI flash not detected after BF upgrade (JEDEC ID 0x00). Target changed from S7X2 to F722, likely broke flash pin mapping. Needs investigation.
+- **Hover test complete** — flies on 4.5.3 with ported 4.4.2 tune, motor_poles corrected to 12
+- **BF 2025.12.2 regression** — ACRO throttle completely non-responsive with Bluejay ESCs (tested on F722 and F411). ANGLE/HORIZON immediate flyaway. Downgrading to 4.5.3 fixed it. Affects both VX35 and Tadpole. Worth filing on Betaflight GitHub.
+- **No blackbox** — Diatone Mamba MK1 F722 AIO has no onboard flash. Blackbox not possible without external logging solution.
+- **Retune pending** — currently on ported 4.4.2 tune. Blackbox flight needed for proper filter/PID tune on 4.5.3.
 - Battery must be connected to access FC via USB
 
 ## Hardware
@@ -39,7 +41,15 @@
 
 | Component | Version |
 |-----------|---------|
-| Betaflight | 2025.12.2 |
+| Betaflight | 4.5.3 |
 | ELRS RX | 3.3.0 |
 | Bluejay (ESC firmware) | 0.21.0 @ 48kHz |
 | Caddx Vista | — |
+
+## Config History
+
+| Snapshot | State | Files |
+|----------|-------|-------|
+| 2026-02-28 | Pre-overhaul baseline — BF unknown, Bluejay 0.16 @ 48kHz | [esc-configurator.png](dumps/20260228/esc-configurator.png) |
+| 2026-03-06 | Post-overhaul — BF 2025.12.2, Bluejay 0.21.0, HD OSD, UAV Tech preset — **do not use, BF regression** | [diff_all.txt](dumps/20260306/diff_all.txt), [diff_all_uavtech_preset.txt](dumps/20260306/diff_all_uavtech_preset.txt), [esc-bluejay-0.21-configured.png](dumps/20260306/esc-bluejay-0.21-configured.png) |
+| 2026-03-07 | BF 4.5.3, ported 4.4.2 tune, motor_poles=12, HD OSD — hover confirmed | [diff_all_453_hd_osd.txt](dumps/20260307/diff_all_453_hd_osd.txt) |
