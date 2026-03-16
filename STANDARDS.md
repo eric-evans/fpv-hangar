@@ -53,25 +53,35 @@ Requires WTFOS on goggles and fpv.os on Vista. BF setup:
 
 ```
 # Ports tab: set UART connected to Vista as MSP + DisplayPort (131073)
-serial UART2 131073 115200 57600 0 115200
-set osd_displayport_device = MSP
-# vcd_video_system locks to HD automatically when Vista is detected
+serial 1 131073 115200 57600 0 115200
+# feature OSD must be explicitly set after defaults nosave — not default-on for all targets
+feature OSD
+# osd_displayport_device auto-selects MSP when serial port is configured as DisplayPort
+# vcd_video_system auto-locks to HD when Vista is detected
+# osd_craftname_msgs must be OFF — otherwise craft name overrides with LQ telemetry string
 ```
 
-Canvas: **53x20** (HD widescreen). OSD elements and positions (from VX35 as reference):
+Canvas: **60x22** (auto-reported by Vista via WTFOS). OSD elements and positions (finalized on VX35, 2026-03-10):
 
 ```
-set osd_vbat_pos = 2595
-set osd_current_pos = 2626
-set osd_craft_name_pos = 2659
+set osd_vbat_pos = 2563
+set osd_current_pos = 2594
+set osd_link_quality_pos = 2627
+set osd_rssi_dbm_pos = 2659
+set osd_craft_name_pos = 611
 set osd_warnings_pos = 14744
-set osd_avg_cell_voltage_pos = 2563
+set osd_avg_cell_voltage_pos = 2531
 set osd_disarmed_pos = 2426
-set osd_warn_bitmask = 50175
+set osd_warn_bitmask = 49917
+set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -102
-set osd_stat_bitmask = 8519844
-set osd_craftname_msgs = ON
+set osd_stat_bitmask = 8519846
+set osd_canvas_width = 60
+set osd_canvas_height = 22
 ```
+
+Warnings enabled: arming disabled, battery critical, battery warning, core temp, crash flip, ESC fail, failsafe, link quality, RC smoothing failure, RSSI dBm, visual beeper.
+Warnings disabled: battery not full (nuisance), analog RSSI (not used with ELRS), GPS rescue.
 
 ### DJI Vista + OG DJI Camera (4:3)
 

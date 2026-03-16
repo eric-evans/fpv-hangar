@@ -1,0 +1,95 @@
+# Betaflight / STM32F7X2 (S7X2) 4.5.3 Feb  6 2026 / 19:03:23 (0e533ba76) MSP API: 1.46
+# config rev: 6f041a4
+# Default tune and rates — clean baseline for tuning. OSD and hardware config only.
+
+# diff all
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.5.3 Feb  6 2026 / 19:03:23 (0e533ba76) MSP API: 1.46
+# config rev: 6f041a4
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name MAMBAF722_I2C
+manufacturer_id DIAT
+mcu_id 003c00193456500f2030324b
+signature
+
+# name: VX35
+
+# feature
+feature OSD
+
+# serial
+serial 1 131073 115200 57600 0 115200
+serial 3 64 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 2 900 1300 0 0
+aux 2 2 2 1300 1700 0 0
+aux 3 13 1 1700 2100 0 0
+aux 4 35 3 1700 2100 0 0
+
+# master
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set acc_calibration = -36,-28,15,1
+set baro_hardware = NONE
+set rc_smoothing_auto_factor = 80
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set fpv_mix_degrees = 25
+set dshot_bidir = ON
+set motor_poles = 12
+set motor_output_reordering = 2,0,3,1,4,5,6,7
+set align_board_yaw = 315
+set yaw_motors_reversed = ON
+set small_angle = 180
+set report_cell_voltage = ON
+set osd_warn_bitmask = 49917
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -102
+set osd_vbat_pos = 2563
+set osd_link_quality_pos = 2627
+set osd_rssi_dbm_pos = 2659
+set osd_current_pos = 2594
+set osd_craft_name_pos = 611
+set osd_warnings_pos = 14744
+set osd_avg_cell_voltage_pos = 2531
+set osd_disarmed_pos = 2426
+set osd_stat_bitmask = 10616998
+set osd_canvas_width = 60
+set osd_canvas_height = 22
+set gyro_1_sensor_align = CW90
+set gyro_1_align_yaw = 900
+set craft_name = VX35
+
+profile 0
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save

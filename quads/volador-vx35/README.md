@@ -1,6 +1,6 @@
 # FlyFishRC Volador VX35
 
-3.5" freestyle night ripper. DJI digital with Caddx Polar camera — exceptional low-light performance. High priority for firmware update and full retune.
+3.5" freestyle night ripper. DJI digital with Caddx Polar camera — exceptional low-light performance.
 
 ## Weight
 
@@ -10,12 +10,12 @@
 
 ## Notes
 
-- Revamp complete 2026-03-07: BF 4.5.3, Bluejay 0.21.0, bidir DSHOT, RPM filtering, HD OSD
+- Revamp complete 2026-03-15: BF 4.5.3, Bluejay 0.21.0, bidir DSHOT, RPM filtering, HD OSD
 - HD OSD working via WTFOS (goggles) + fpv.os (Vista)
-- **Hover test complete** — flies on 4.5.3 with ported 4.4.2 tune, motor_poles corrected to 12
-- **BF 2025.12.2 regression** — ACRO throttle completely non-responsive with Bluejay ESCs (tested on F722 and F411). ANGLE/HORIZON immediate flyaway. Downgrading to 4.5.3 fixed it. Affects both VX35 and Tadpole. Worth filing on Betaflight GitHub.
+- Flying on UAV Tech 2-4" preset (medium build, 48kHz ESC, dynamic idle) + ELRS 500Hz preset
+- Stock tune flight felt okay — some wobble at end of rolls/loops, noticeable propwash. UAV Tech + dynamic idle applied to address.
 - **No blackbox** — Diatone Mamba MK1 F722 AIO has no onboard flash. Blackbox not possible without external logging solution.
-- **Retune pending** — currently on ported 4.4.2 tune. Blackbox flight needed for proper filter/PID tune on 4.5.3.
+- **BF 2025.12.2 regression** — ACRO throttle completely non-responsive with Bluejay ESCs (tested on F722 and F411). Downgrading to 4.5.3 fixed it. Worth filing on Betaflight GitHub.
 - Battery must be connected to access FC via USB
 
 ## Hardware
@@ -53,3 +53,6 @@
 | 2026-02-28 | Pre-overhaul baseline — BF unknown, Bluejay 0.16 @ 48kHz | [esc-configurator.png](dumps/20260228/esc-configurator.png) |
 | 2026-03-06 | Post-overhaul — BF 2025.12.2, Bluejay 0.21.0, HD OSD, UAV Tech preset — **do not use, BF regression** | [diff_all.txt](dumps/20260306/diff_all.txt), [diff_all_uavtech_preset.txt](dumps/20260306/diff_all_uavtech_preset.txt), [esc-bluejay-0.21-configured.png](dumps/20260306/esc-bluejay-0.21-configured.png) |
 | 2026-03-07 | BF 4.5.3, ported 4.4.2 tune, motor_poles=12, HD OSD — hover confirmed | [diff_all_453_hd_osd.txt](dumps/20260307/diff_all_453_hd_osd.txt) |
+| 2026-03-10 | OSD finalized — LQ + RSSI DBM elements positioned, warnings cleaned up, craft name set to VX35 | [diff_all.txt](dumps/20260310/diff_all.txt) |
+| 2026-03-10 | Bare minimum config — stock BF 4.5.3 tune, confirmed flyable | [diff_all_bare.txt](dumps/20260310/diff_all_bare.txt) |
+| 2026-03-15 | UAV Tech 2-4" + ELRS 500Hz presets, dshot_bidir ON, srate 70 pitch/roll | [diff_all_uavtech_elrs500.txt](dumps/20260315/diff_all_uavtech_elrs500.txt) |
